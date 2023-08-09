@@ -39,6 +39,14 @@ footer a {
   text-decoration: none;
 }
 
+.experience-section h2 {
+  margin-bottom: 3rem;
+}
+
+.experience-item {
+  margin-bottom: 4rem;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -54,10 +62,15 @@ footer a {
   float: 70%;
 }
 
-.experience-section h2 {
-  margin-bottom: 3rem;
+.contact-form div {
+  padding-bottom: 1rem;
 }
 
-.experience-item {
-  margin-bottom: 4rem;
+.contact-form div input {
+  background-color: aliceblue;
+  color: rgb(35, 33, 46);
+}
+
+.contact-form button {
+  border-color: aquamarine;
 }
