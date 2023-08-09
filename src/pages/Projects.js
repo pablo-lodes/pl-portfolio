@@ -22,9 +22,9 @@ export default function Projects() {
         }
     ];
 
-    function ShowProject(currentProject) {
+    function ShowProject(currentProject, key) {
         return (
-            <div id={currentProject.id} className="project">
+            <div key={key} className="project">
                 <div className="project-picture">
                     <img src={logo} alt={currentProject.title} />
                 </div>
@@ -39,7 +39,7 @@ export default function Projects() {
     return (
         <div className="projects">
             <h2>Projects</h2>
-            {projects.map(currentProject => ShowProject(currentProject))}
+            {projects.map(currentProject => ShowProject(currentProject, currentProject.id))}
         </div>
     );
 }
