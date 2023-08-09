@@ -12,12 +12,20 @@
 .short-information-top-nav {
   border: 1px solid rgb(255, 0, 221);
   padding-left: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .short-information {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.short-information h2 {
+  margin-bottom: 0.5rem;
+}
+
+.short-information h3 {
+  margin-top: 0.5rem;
 }
 
 .top-nav a {
