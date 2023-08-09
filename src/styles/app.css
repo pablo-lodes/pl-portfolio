@@ -1,17 +1,22 @@
 * {
   background-color: rgb(35, 33, 46);
   color: aliceblue;
+  /*max-width: 1600px;*/
+
+  /*font-family: monospace;*/
 }
 
 .root-layout {
-  margin: 12rem;
+  margin: 0 auto;
+  width: 50%;
   /*display: flex;*/
 }
 
 .short-information-top-nav {
   border: 1px solid rgb(255, 0, 221);
   padding-left: 3rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .short-information {
@@ -21,6 +26,14 @@
 .top-nav a {
   margin-right: 0.8rem;
   text-decoration: none;
+}
+
+.top-nav a:hover {
+  color: rgb(255, 0, 221);
+}
+
+.top-nav a:active {
+  color: rgb(255, 0, 221);
 }
 
 main {
@@ -39,27 +52,41 @@ footer a {
   text-decoration: none;
 }
 
-.experience-section h2 {
+footer a:hover {
+  color: rgb(0, 238, 255);
+}
+
+footer a:active {
+  color: rgb(0, 238, 255);
+}
+
+/*.experience-section h2 {
   margin-bottom: 3rem;
 }
 
 .experience-item {
   margin-bottom: 4rem;
-}
+}*/
 
-.projects {
+/*.projects {
   display: flex;
   flex-wrap: wrap;
+}*/
+
+.project {
+  display: flex;
+  align-items: center;
 }
 
 .project-picture {
-  flex: 30%;
-  width: 8rem;
-  height: 8rem;
+  flex: 1 1 auto;
+  margin-right: 5px;
 }
 
-.project-information {
-  float: 70%;
+.project-picture img {
+  max-width: 50%;
+  min-width: 100px;
+  /* Stelle sicher, dass das Bild nicht breiter als sein Container ist */
 }
 
 .contact-form div {
