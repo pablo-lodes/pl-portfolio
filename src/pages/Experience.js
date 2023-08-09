@@ -11,14 +11,14 @@ export default function Experience() {
             description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         },
         {
-            id: 0,
+            id: 1,
             duration: "Oct. 2022 - Jan. 2023",
             title: "Digital Media Management",
             subtitle: "karriere tutor",
             description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         },
         {
-            id: 0,
+            id: 2,
             duration: "Aug. 2022 - Oct. 2022",
             title: "Webdesign with WordPress",
             subtitle: "karriere tutor",
