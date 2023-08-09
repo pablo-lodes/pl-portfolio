@@ -5,7 +5,7 @@ export default function Experience() {
     const experienceStations = [
         {
             id: 0,
-            duration: "Jul. - Aug. 2023",
+            duration: "Jul. 2023 - Aug. 2023",
             title: "React JavaScript Libraries",
             subtitle: "alfatraining",
             description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
