@@ -1,145 +1,63 @@
 * {
-  box-sizing: border-box;
+  background-color: rgb(35, 33, 46);
+  color: aliceblue;
 }
 
-/* Style the body */
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  background-color: darkblue;
+.root-layout {
+  margin: 12rem;
+  /*display: flex;*/
 }
 
-.contentwrapper {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 6rem;
-}
-
-/* Style the top navigation bar */
-.top-nav {
-  display: flex;
-  flex-direction: column;
-  margin-top: 6rem;
-}
-
-/* Style the navigation bar links */
-.top-nav a {
-  color: black;
-  padding: 14px 0px;
-  text-decoration: none;
-  text-align: left;
-}
-
-/* Change color on hover */
-.top-nav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
 .short-information-top-nav {
-  flex: 40%;
-  padding: 6rem 4rem 0rem;
-  position: sticky;
-  top: 0;
+  border: 1px solid rgb(255, 0, 221);
+  padding-left: 3rem;
+  padding-bottom: 1rem;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .short-information {
-
-  background-color: #f1f1f1;
-  padding: 20px;
-
+  margin-bottom: 3rem;
 }
 
-/* Main column */
-.main {
-  flex: 60%;
-  background-color: white;
-  padding: 20px;
-  overflow-y: auto;
-  position: relative;
-  max-height: calc(100vh - 120px)
+.top-nav a {
+  margin-right: 0.8rem;
+  text-decoration: none;
 }
 
-.left-side {
-  flex: 30%;
-  padding: 0 20px;
+main {
+  border: 1px solid rgb(255, 238, 0);
+  padding: 3rem;
 }
 
-.right-side {
-  flex: 70%;
-  padding: 0 20px;
+footer {
+  border: 1px solid rgb(0, 238, 255);
+  text-align: right;
+  padding: 1rem;
 }
 
-.experience {
-  margin-top: 6rem;
-
+footer a {
+  margin-right: 0.5rem;
+  text-decoration: none;
 }
 
 .projects {
-  margin-top: 6rem;
-}
-
-.article {
-  flex-basis: 100%;
-  /* Setze die Breite der article-Container auf 100% */
   display: flex;
-  margin-bottom: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
-.article .left-side h4 {
-  margin: 0;
-  font-size: 14px;
-  color: #555;
+.project-picture {
+  flex: 30%;
+  width: 8rem;
+  height: 8rem;
 }
 
-.article .right-side h2 {
-  margin-top: 0;
+.project-information {
+  float: 70%;
 }
 
-
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
+.experience-section h2 {
+  margin-bottom: 3rem;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-    /* Change the direction of the flex container from row to column */
-    align-items: center;
-    /* Center the items horizontally */
-    justify-content: center;
-    /* Center the items vertically */
-  }
-
-  .side,
-  .main {
-    /* Make the side and main containers take up the full width of the screen */
-    width: 100%;
-    flex-basis: auto;
-    /* Adjust the flex basis according to the content size */
-  }
-
-  .top-nav {
-    /* Make the navigation bar links stack on top of each other instead of next to each other */
-    flex-direction: column;
-  }
+.experience-item {
+  margin-bottom: 4rem;
 }
