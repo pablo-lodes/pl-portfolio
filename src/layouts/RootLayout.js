@@ -8,14 +8,14 @@ export default function RootLayout() {
                 <div className="short-information-top-nav">
                     <div className="short-information">
                         <h2>Pablo Lodes</h2>
-                        <h3>Designer and Frontend Developer</h3>
+                        <h1>Designer and Frontend Developer</h1>
                     </div>
                     <div className="top-nav">
                         <nav>
-                            <NavLink to="about">About</NavLink>
-                            <NavLink to="experience">Experience</NavLink>
-                            <NavLink to="projects">Projects</NavLink>
-                            <NavLink to="contact">Contact</NavLink>
+                            <NavLink to="/about" key="about">About</NavLink>
+                            <NavLink to="/experience" key="experience">Experience</NavLink>
+                            <NavLink to="/projects" key="projects">Projects</NavLink>
+                            <NavLink to="/contact" key="contact">Contact</NavLink>
                         </nav>
                     </div>
                 </div>
@@ -35,11 +35,11 @@ export default function RootLayout() {
         return (
             <footer>
                 <nav>
-                    <NavLink to='/'>Impressum</NavLink>
-                    <NavLink to='/'>Datenschutz</NavLink>
+                    <NavLink to='/legal-notice' key="legal-notice">Legal Notice</NavLink>
+                    <NavLink to='/privacy-policy' key="privacy-policy">Privacy Policy</NavLink>
                 </nav>
             </footer>
-        )
+        );
     }
 
 
@@ -49,5 +49,5 @@ export default function RootLayout() {
             <MainContent />
             <Footer />
         </div>
-    )
+    );
 }
