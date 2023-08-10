@@ -33,7 +33,7 @@ export default function Projects() {
                     <p>{currentProject.description}</p>
                 </div>
             </div>
-        )
+        );
     }
 
     return (
